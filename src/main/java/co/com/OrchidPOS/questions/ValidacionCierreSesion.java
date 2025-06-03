@@ -2,8 +2,9 @@ package co.com.OrchidPOS.questions;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.questions.Text;
-import static co.com.OrchidPOS.userinterface.cierreSesion.INPUT_CORREO;
+import net.serenitybdd.screenplay.questions.Visibility;
+
+import static co.com.OrchidPOS.userinterface.cierreSesion.*;
 
 public class ValidacionCierreSesion implements Question<Boolean> {
 
@@ -13,7 +14,6 @@ public class ValidacionCierreSesion implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        String mensaje = INPUT_CORREO.resolveFor(actor).getAttribute("placeholder");
-        return mensaje.equals("Correo");
+        return Visibility.of(INPUT_CORREO).viewedBy(actor).asBoolean() && Visibility.of(INPUT_CONRASENA).viewedBy(actor).asBoolean() && Visibility.of(BTN_LOGIN).viewedBy(actor).asBoolean();
     }
 }

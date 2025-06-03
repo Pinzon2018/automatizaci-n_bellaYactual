@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.Question;
 import net.serenitybdd.screenplay.questions.Text;
 import net.serenitybdd.screenplay.questions.Visibility;
 
-import static co.com.OrchidPOS.userinterface.registroUsuario.BTN_EDITAR;
+import static co.com.OrchidPOS.userinterface.registroUsuario.*;
 
 
 public class ValidacionRegistro implements Question<Boolean> {
@@ -16,6 +16,7 @@ public class ValidacionRegistro implements Question<Boolean> {
 
     @Override
     public Boolean answeredBy(Actor actor) {
-        return Visibility.of(BTN_EDITAR).viewedBy(actor).asBoolean();
+
+        return Visibility.of(BTN_EDITAR).viewedBy(actor).asBoolean() && Visibility.of(BTN_AGREGAR).viewedBy(actor).asBoolean() && Visibility.of(BTN_ELIMINAR).viewedBy(actor).asBoolean();
     }
 }

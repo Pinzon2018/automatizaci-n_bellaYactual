@@ -18,7 +18,6 @@ public class CierreSesion implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                WaitUntil.the(BTN_LOGOUT, WebElementStateMatchers.isClickable()).forNoMoreThan(10).seconds(),
                 Click.on(BTN_LOGOUT)
         );
     }

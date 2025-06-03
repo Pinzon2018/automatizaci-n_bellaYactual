@@ -15,7 +15,7 @@ public class registroUsuario extends PageObject {
     public static Target INPUT_FECHACONTRATO = Target.the("Fecha contrato").located(By.xpath("//*[@id=\"root\"]/div/div/form/div[6]/input"));
     public static Target INPUT_ROL = Target.the("Rol").located(By.xpath("//*[@id=\"root\"]/div/div/form/div[7]/select"));
     public static Target BTN_REGISTRO = Target.the("Boton Registro").located(By.xpath("//*[@id=\"root\"]/div/div/form/button"));
-
     public static final Target BTN_EDITAR = Target.the("Editar").located(By.xpath("//*[@id=\"root\"]/div/div/table/tbody/tr[1]/td[8]/button"));
-
+    public static final Target BTN_AGREGAR = Target.the("Boton agregar Usuario").located(By.xpath("//*[@id=\"root\"]/div/div/div/button"));
+    public static final Target BTN_ELIMINAR = Target.the("Boton de eiminar usuario").located(By.xpath("//*[@id=\"root\"]/div/div/table/tbody/tr[1]/td[9]/button"));
 }

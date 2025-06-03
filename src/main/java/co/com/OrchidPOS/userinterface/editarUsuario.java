@@ -17,4 +17,10 @@ public class editarUsuario extends PageObject {
     public static Target INPUT_ROL = Target.the("Rol Usuario").located(By.xpath("//*[@id=\"root\"]/div/div/form/select"));
     public static Target BTN_GUARDARCAMBIOS = Target.the("Guardar Cambios").located(By.xpath("//*[@id=\"root\"]/div/div/form/button"));
     public static final Target TEXT_ID = Target.the("ID").located(By.xpath("//*[@id=\"root\"]/div/div/table/thead/tr/th[1][text()='ID']"));
+    public static final Target TEXT_NOMBRE = Target.the("Nombre").located(By.xpath("//*[@id=\"root\"]/div/div/table/thead/tr/th[2][text()='Nombre']"));
+    public static final Target TEXT_CEDULA = Target.the("Cedula").located(By.xpath("//*[@id=\"root\"]/div/div/table/thead/tr/th[3][text()='Cédula']"));
+    public static final Target TEXT_CORREO = Target.the("Correo").located(By.xpath("//*[@id=\"root\"]/div/div/table/thead/tr/th[4][text()='Correo']"));
+    public static final Target TEXT_TELEFONO = Target.the("Telefono").located(By.xpath("//*[@id=\"root\"]/div/div/table/thead/tr/th[5][text()='Teléfono']"));
+    public static final Target TEXT_FECHACONTRATO = Target.the("Fecha Contrato").located(By.xpath("//*[@id=\"root\"]/div/div/table/thead/tr/th[6][text()='Fecha Contrato']"));
+    public static final Target TEXT_ROL = Target.the("Rol").located(By.xpath("//*[@id=\"root\"]/div/div/table/thead/tr/th[7][text()='Rol']"));
 }
