@@ -1,4 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Autenticarse en  OrchidPOS","Verificar la autenticacion exitosa en OrchidPOS","SUCCESS","2025-05-28T00:59:37.8957299-05:00[America/Bogota]","0.0","44.95"
-"Creación de subcategoria","Crear subcategoria","PENDING","2025-06-03T11:49:33.5814807-05:00[America/Bogota]","0.0","82.98"
-"Realizar una venta","Verificar que la venta haya sido concluida y registrada","FAILURE","2025-06-05T11:20:25.8185791-05:00[America/Bogota]","0.0","438.07"
