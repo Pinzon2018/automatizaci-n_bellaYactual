@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Realizar una venta" skipped="0" tests="1" time="438.07" timestamp="2025-06-05 11:20:25"><testcase name="Verificar que la venta haya sido concluida y registrada"><failure message="&#13;&#10;Expected: is &lt;true&gt;&#13;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">&#13;
+Expected: is &lt;true&gt;&#13;
+     but: was &lt;false&gt;</failure><system-err>&#13;
+Expected: is &lt;true&gt;&#13;
+     but: was &lt;false&gt;&#13;
+co.com.AutomatizacionOrchidPOS.stepsdefinitions.VentaStepsDefinition.seDebenVisualizarLosDetallesDeLaVentaYElRegistroDeEstaEnElHistorialDeVentas(VentaStepsDefinition.java:34)&#13;
+✽.se deben visualizar los detalles de la venta y el registro de esta en el historial de ventas(src/test/resources/features/venta.feature:21)&#13;
+</system-err></testcase></testsuite>

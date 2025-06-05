@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Realizar una venta" tests="1" skipped="0" failures="1" errors="0" timestamp="2025-06-05T16:20:26" hostname="DESKTOP-IDMCDI6" time="440.61">
+  <properties/>
+  <testcase name="Verificar que la venta haya sido concluida y registrada" classname="Realizar una venta" time="440.61">
+    <failure message="java.lang.AssertionError: &#13;&#10;Expected: is &lt;true&gt;&#13;&#10;     but: was &lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: 
+Expected: is &lt;true&gt;
+     but: was &lt;false&gt;
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at co.com.AutomatizacionOrchidPOS.stepsdefinitions.VentaStepsDefinition.seDebenVisualizarLosDetallesDeLaVentaYElRegistroDeEstaEnElHistorialDeVentas(VentaStepsDefinition.java:34)
+	at ✽.se deben visualizar los detalles de la venta y el registro de esta en el historial de ventas(src/test/resources/features/venta.feature:21)
+</failure>
+  </testcase>
+  <system-out><![CDATA[    ?[32mDado ?[0m?[32mque el usuario se encuentra en la homepage de OrchidPOS?[0m     ?[90m# LogInStepsDefinition.queElUsuarioSeEncuentraEnLaHomepageDeOrchidPOS()?[0m
+    ?[32mCuando ?[0m?[32mingrese las credenciales correctas (usuario y contrasena)?[0m ?[90m# LogInStepsDefinition.ingreseLasCredencialesCorrectasUsuarioYContrasena(CredencialesLogIn>)?[0m
+
+  @venta
+  Escenario: Verificar que la venta haya sido concluida y registrada                                      ?[90m# src/test/resources/features/venta.feature:17?[0m
+    ?[32mCuando ?[0m?[32mingrese datos validos en (Id Producto y Cantidad)?[0m                                              ?[90m# VentaStepsDefinition.ingreseDatosValidosEnIdProductoYCantidad(CredencialesVenta>)?[0m
+Venta generada con éxito
+admin@example.com
+    ?[31mEntonces ?[0m?[31mse deben visualizar los detalles de la venta y el registro de esta en el historial de ventas?[0m ?[90m# VentaStepsDefinition.seDebenVisualizarLosDetallesDeLaVentaYElRegistroDeEstaEnElHistorialDeVentas()?[0m
+      ?[31mjava.lang.AssertionError: 
+Expected: is <true>
+     but: was <false>
+	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
+	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
+	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
+	at co.com.AutomatizacionOrchidPOS.stepsdefinitions.VentaStepsDefinition.seDebenVisualizarLosDetallesDeLaVentaYElRegistroDeEstaEnElHistorialDeVentas(VentaStepsDefinition.java:34)
+	at ?.se deben visualizar los detalles de la venta y el registro de esta en el historial de ventas(src/test/resources/features/venta.feature:21)
+?[0m
+]]></system-out>
+  <system-err><![CDATA[Jun 05, 2025 11:20:33 AM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+[Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, goog:chromeOptions: {args: [], extensions: [], prefs: {behavior: allow}}, loggingPrefs: org.openqa.selenium.logging..., name: proyecto, platform: ANY, unhandledPromptBehavior: ignore, version: }
+Starting ChromeDriver 136.0.7103.94 (fa0be0b33debeb378a8e6ad9c599be34e2dc3b37-refs/branch-heads/7103@{#1842}) on port 9344
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 9344.
+[1749140494.719][WARNING]: This version of ChromeDriver has not been tested with Chrome version 137.
+Jun 05, 2025 11:22:00 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+[1749140822.761][SEVERE]: Timed out receiving message from renderer: 300.000
+[1749140822.841][SEVERE]: Timed out receiving message from renderer: 300.000
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - 
+           __  _____ _____ ____ _____   _____ _    ___ _     _____ ____  
+  _       / / |_   _| ____/ ___|_   _| |  ___/ \  |_ _| |   | ____|  _ \ 
+ (_)_____| |    | | |  _| \___ \ | |   | |_ / _ \  | || |   |  _| | | | |
+  _|_____| |    | | | |___ ___) || |   |  _/ ___ \ | || |___| |___| |_| |
+ (_)     | |    |_| |_____|____/ |_|   |_|/_/   \_\___|_____|_____|____/ 
+          \_\                                                            
+
+TEST FAILED: Verificar que la venta haya sido concluida y registrada
+--------------------------------------------------------------------------
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - TEST FAILED AT STEP Then validacion usuario venta should be (true)
+[Test worker] ERROR net.thucydides.core.steps.ConsoleLoggingListener - Expected: is <true> but: was <false>
+]]></system-err>
+</testsuite>
