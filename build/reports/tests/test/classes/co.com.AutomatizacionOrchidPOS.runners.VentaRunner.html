@@ -96,17 +96,67 @@
 ?[31msrc/test/resources/features/venta.feature:17 ?[0m# Verificar que la venta haya sido concluida y registrada
 
 1 Scenarios (?[31m1 failed?[0m)
-4 Steps (?[31m1 failed?[0m, ?[32m3 passed?[0m)
-7m23.387s
+4 Steps (?[31m1 failed?[0m, ?[36m3 skipped?[0m)
+1m15.199s
 
-java.lang.AssertionError: 
-Expected: is &lt;true&gt;
-     but: was &lt;false&gt;
-	at net.serenitybdd.screenplay.ErrorTally.throwSummaryExceptionFrom(ErrorTally.java:36)
-	at net.serenitybdd.screenplay.ErrorTally.reportAnyErrors(ErrorTally.java:30)
-	at net.serenitybdd.screenplay.Actor.should(Actor.java:316)
-	at co.com.AutomatizacionOrchidPOS.stepsdefinitions.VentaStepsDefinition.seDebenVisualizarLosDetallesDeLaVentaYElRegistroDeEstaEnElHistorialDeVentas(VentaStepsDefinition.java:34)
-	at ?.se deben visualizar los detalles de la venta y el registro de esta en el historial de ventas(src/test/resources/features/venta.feature:21)
+net.serenitybdd.core.exceptions.SerenityManagedException: The following error occurred: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=137.0.7151.68)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-IDMCDI6', ip: '172.20.10.2', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.68, chrome: {chromedriverVersion: 136.0.7103.94 (fa0be0b33deb..., userDataDir: C:\Users\PAULAA~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49897}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b392bed38af5ef9e036a716382c8bd83
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at net.thucydides.core.webdriver.WebDriverFacade.get(WebDriverFacade.java:172)
+	at net.serenitybdd.core.pages.PageObject.openPageAtUrl(PageObject.java:902)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:803)
+	at net.serenitybdd.core.pages.PageObject.open(PageObject.java:791)
+	at net.serenitybdd.screenplay.actions.OpenPage.performAs(OpenPage.java:22)
+	at net.serenitybdd.screenplay.actions.OpenPage$ByteBuddy$Yci2rjpc.performAs$accessor$G6XvF92B(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at net.serenitybdd.screenplay.actions.OpenPage$ByteBuddy$Yci2rjpc.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at co.com.AutomatizacionOrchidPOS.tasks.AbrirHomepage.performAs(AbrirHomepage.java:16)
+	at co.com.AutomatizacionOrchidPOS.tasks.AbrirHomepage$ByteBuddy$XRZWDaqx.performAs$accessor$kh209Lln(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:488)
+	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:468)
+	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:441)
+	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:197)
+	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:184)
+	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:77)
+	at co.com.AutomatizacionOrchidPOS.tasks.AbrirHomepage$ByteBuddy$XRZWDaqx.performAs(Unknown Source)
+	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:248)
+	at net.serenitybdd.screenplay.Actor.perform(Actor.java:229)
+	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:175)
+	at net.serenitybdd.screenplay.Actor.wasAbleTo(Actor.java:162)
+	at co.com.AutomatizacionOrchidPOS.stepsdefinitions.LogInStepsDefinition.queElUsuarioSeEncuentraEnLaHomepageDeOrchidPOS(LogInStepsDefinition.java:24)
+	at ?.que el usuario se encuentra en la homepage de OrchidPOS(src/test/resources/features/venta.feature:10)
 
 </pre>
 </span>
@@ -157,7 +207,7 @@ log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more in
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at Jun 5, 2025, 11:28:25 AM</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at Jun 5, 2025, 7:01:22 PM</p>
 </div>
 </div>
 </body>

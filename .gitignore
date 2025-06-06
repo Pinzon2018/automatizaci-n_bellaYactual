@@ -1,0 +1,22 @@
+# Ignore Gradle build output
+/build/
+/target/
+/.gradle/
+/out/
+
+# Ignore IntelliJ project files
+.idea/
+*.iml
+
+# Ignore Serenity output
+.serenity/
+.serenity-cache/
+*.serenity/
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+

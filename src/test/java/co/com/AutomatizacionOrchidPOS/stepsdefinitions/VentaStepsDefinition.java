@@ -1,9 +1,7 @@
 package co.com.AutomatizacionOrchidPOS.stepsdefinitions;
 
 import co.com.AutomatizacionOrchidPOS.models.CredencialesVenta;
-import co.com.AutomatizacionOrchidPOS.questions.Venta.ValidacionIDVenta;
-import co.com.AutomatizacionOrchidPOS.questions.Venta.ValidacionMensajeVenta;
-import co.com.AutomatizacionOrchidPOS.questions.Venta.ValidacionUsuarioVenta;
+import co.com.AutomatizacionOrchidPOS.questions.Venta.ValidacionVenta;
 import co.com.AutomatizacionOrchidPOS.tasks.HacerVenta;
 import cucumber.api.java.es.Cuando;
 import cucumber.api.java.es.Entonces;
@@ -29,9 +27,8 @@ public class VentaStepsDefinition {
     @Entonces("^se deben visualizar los detalles de la venta y el registro de esta en el historial de ventas$")
     public void seDebenVisualizarLosDetallesDeLaVentaYElRegistroDeEstaEnElHistorialDeVentas() {
 
-        theActorInTheSpotlight().should(seeThat(ValidacionIDVenta.validacionVenta(), is(true)));
-        theActorInTheSpotlight().should(seeThat(ValidacionMensajeVenta.validacionMensajeVenta(), is(true)));
-        theActorInTheSpotlight().should(seeThat(ValidacionUsuarioVenta.validacionUsuarioVenta(), is(true)));
+
+        theActorInTheSpotlight().should(seeThat(ValidacionVenta.validarVenta(), is(true)));
 
     }
 
